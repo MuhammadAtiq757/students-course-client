@@ -5,6 +5,7 @@ import Banner from '../Banner/Banner';
 import OurTeacher from '../OurTeacher/OurTeacher';
 import News from '../News/News';
 import Items from '../Items/Items';
+import GetTouch from '../GetTouch/GetTouch';
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
           <OurTeacher></OurTeacher>
           <News></News>
           <Items></Items>
+          <GetTouch></GetTouch>
          
         </div>
     );
