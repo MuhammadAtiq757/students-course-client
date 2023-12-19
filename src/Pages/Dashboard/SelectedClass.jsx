@@ -37,10 +37,11 @@ const SelectedClass = () => {
     {/* head */}
     <thead>
       <tr>
-        <th>Image</th>
-        <th>Class Name</th>
-        <th>instructor Name</th>
+        <th>Photo</th>
+        <th>Course Name</th>
+        <th>Teacher Name</th>
         <th>Action</th>
+       
       </tr>
     </thead>
     <tbody>
@@ -55,8 +56,7 @@ const SelectedClass = () => {
             <td>{info .name}</td>
             <td>{info .instructorName}</td>
             <td className=''>
-               <button onClick={()=>handleDelete(info._id)} className='btn btn-xs btn-error mx-2'>Delete</button> 
-               <button className='btn btn-xs btn-warning mx-2'>Pay</button> 
+               <button onClick={()=>handleDelete(info._id)} className='btn btn-xs text-white py-4 text-center  pb-6 px-4 bg-blue-700  hover:bg-red-700'>Delete</button> 
 
             </td>
           </tr>)

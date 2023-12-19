@@ -37,7 +37,6 @@ const handleDarkMode =(event)=>{
    
     const navOptions = <>
         <li className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='/'>Home</Link></li>
-        <li className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='/instructor'> Teachers</Link></li>
         <li className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='/classes'>Courses</Link></li>
            
         {

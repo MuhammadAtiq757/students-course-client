@@ -57,7 +57,7 @@ const Class = ({ da }) => {
           <img className='h-[250px] ' src={da.image} alt="course" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">Class Name: {da.className}</h2>
+          <h2 className="card-title"> {da.className}</h2>
           <p>Students: {da.students}</p>
           <p>Available Seats: {da.availableSeats}</p>
           <button

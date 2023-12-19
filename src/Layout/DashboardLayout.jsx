@@ -2,7 +2,6 @@ import React from 'react';
 import { FaBookReader, FaHome, FaBookOpen, FaAddressBook, FaColumns,FaUserFriends  } from 'react-icons/fa';
 import { Link, Outlet } from 'react-router-dom';
 import AdminHook from '../Pages/Hooks/AdminHook';
-import Instructor from '../Pages/Instructors/Instructor';
 import InstructorHook from '../Pages/Hooks/InstructorHook';
 
 // import { IconName } from "react-icons/fc";
