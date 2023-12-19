@@ -69,18 +69,18 @@ method: 'PATCH'
 
 
     return (
-     <div>
+     <div className='bg-gray-200 w-full'>
 
 <div className="overflow-x-auto">
   <table className="table table-zebra">
     {/* head */}
     <thead>
       <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Make Instructor</th>
-        <th>Make Admin</th>
+        <th className='text-xl font-semibold'>No</th>
+        <th className='text-xl font-semibold'>Name</th>
+        <th className='text-xl font-semibold'>Email</th>
+        {/* <th>Make Instructor</th>
+        <th>Make Admin</th> */}
       </tr>
     </thead>
     <tbody>
@@ -89,10 +89,10 @@ method: 'PATCH'
         <th>{index + 1}</th>
         <td>{user.name}</td>
         <td>{user.email}</td>
-        <td>{user.role === 'instructor' ? 'instructor' : <button onClick={() => handleMakeInstructor(user)} className='btn btn-xs btn-outline btn-secondary'>Instructor</button>}</td>
+        {/* <td>{user.role === 'instructor' ? 'instructor' : <button onClick={() => handleMakeInstructor(user)} className='btn btn-xs btn-outline btn-secondary'>Instructor</button>}</td>
 
 
-        <td>{user.role === 'admin' ? 'admin' : <button onClick={() => handleMakeAdmin(user)} className='btn btn-xs btn-outline btn-secondary'>Admin</button>}</td>
+        <td>{user.role === 'admin' ? 'admin' : <button onClick={() => handleMakeAdmin(user)} className='btn btn-xs btn-outline btn-secondary'>Admin</button>}</td> */}
       </tr>)
    }
      

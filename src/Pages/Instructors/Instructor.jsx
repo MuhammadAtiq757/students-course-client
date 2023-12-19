@@ -25,13 +25,13 @@ const Instructor = () => {
 
   return (
     <>
-      <div className='grid md:grid-cols-3 mx-6 p-6 mx-auto'>
+      <div className='grid md:grid-cols-3 p-6 mx-auto'>
         {displayedInstructors.map(da => (
           <div key={da._id}>
             <div className="card w-80 bg-base-100 shadow-xl mt-4">
               <figure><img src={da.insImg} className='rounded h-80' alt="Shoes" /></figure>
               <div className="card-body h-52">
-                <h2 className="card-title">Instructor: {da.instructorName}</h2>
+                <h2 className="card-title">Name: {da.instructorName}</h2>
                 <h2 className="card-title">Email: {da.instructorEmail}</h2>
               </div>
             </div>

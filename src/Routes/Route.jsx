@@ -15,6 +15,7 @@ import Allusers from "../Pages/Dashboard/Admin/Allusers";
 import SelectedClass from "../Pages/Dashboard/SelectedClass";
 import AddClasses from "../Pages/InstructorHome/AddClasses";
 import MyClass from "../Pages/InstructorHome/MyClass";
+import Instructor from "../Pages/Instructors/Instructor";
 
 
 
@@ -44,7 +45,11 @@ export const router = createBrowserRouter([
                  {
                     path: '/classes',
                     element: <Classes></Classes>
-                 }
+                 },
+                 {
+                  path: '/instructor',
+                  element: <Instructor></Instructor>
+               },
            
             ]
             

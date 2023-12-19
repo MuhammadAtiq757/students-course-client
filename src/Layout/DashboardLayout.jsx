@@ -30,19 +30,14 @@ const [isInstructor] = InstructorHook()
 
 
           {
-            isAdmin ?( <>
-                <li> <Link> <FaHome></FaHome> Admin Home </Link> </li>
-              <li> <Link to="/dashboardlayout/allclasses"> <FaColumns></FaColumns> Manage Classes </Link> </li>
-              <li><Link to='/dashboardlayout/allusers'> <FaUserFriends></FaUserFriends>  Manage Users</Link></li>
-            </>
-            ) : isInstructor ? (
+            isInstructor ? (
             <>
               <li>
-              <li> <Link> <FaHome></FaHome> Instructor Home </Link> </li>
+              <li> <Link> <FaHome></FaHome> Admin Home </Link> </li>
 
-                <Link to='/dashboardlayout/addclasses'> <FaAddressBook></FaAddressBook> Add Classes</Link>
-                <Link to='/dashboardlayout/myclass'> <FaBookReader></FaBookReader> My Classes</Link>
-              <Link to='/dashboardlayout/allusers'> <FaUserFriends></FaUserFriends>  Manage Users</Link></li>
+                <Link to='/dashboardlayout/addclasses'> <FaAddressBook></FaAddressBook> Add Courses</Link>
+                <Link to='/dashboardlayout/myclass'> <FaBookReader></FaBookReader> Added Courses</Link>
+              <Link to='/dashboardlayout/allusers'> <FaUserFriends></FaUserFriends>  Students</Link></li>
 
               
             </>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Class from './class';
 import './classes.css';
+import Class from './Class';
 
 const Classes = () => {
   const [data, setData] = useState([]);
@@ -24,8 +24,9 @@ const Classes = () => {
   };
 
   return (
-    <div className='test m-8 grid md:grid-cols-2 gap-8 p-8'>
-      {data.slice(0, showAll ? data.length : 6).map(da => {
+    <div className='container mx-auto px-4 '>
+      <div className='grid md:grid-cols-3 gap-4'>
+      {data.slice(0, showAll ? data.length : 8).map(da => {
         if (da.availableSeats === 0) {
           return (
             <div key={da._id} style={{ backgroundColor: 'red' }}>
@@ -40,13 +41,9 @@ const Classes = () => {
           );
         }
       })}
-      {!showAll && (
-        <div className="text-center">
-          <button className="btn btn-primary" onClick={handleShowMore}>
-            Show More
-          </button>
-        </div>
-      )}
+    
+    </div>
+
     </div>
   );
 };

@@ -51,21 +51,21 @@ const Class = ({ da }) => {
   };
 
   return (
-    <div>
+    <div className='mt-24 border-y-4'>
       <div className={`card w-100  w-md-80 shadow-xl mt-4 ${cardColor}`}>
         <figure>
-          <img src={da.image} alt="Shoes" />
+          <img className='h-[250px] ' src={da.image} alt="course" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">Class Name: {da.className}</h2>
           <p>Students: {da.students}</p>
           <p>Available Seats: {da.availableSeats}</p>
           <button
-            className='btn btn-outline'
+            className='btn btn-outline hover:bg-blue-700'
             onClick={() => handleSelectClass(da)}
             disabled={isButtonDisabled} // Disable the button based on the state
           >
-            Select Class
+            Apply Course
           </button>
         </div>
       </div>
