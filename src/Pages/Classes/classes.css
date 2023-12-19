@@ -1,0 +1,17 @@
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .test img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .test-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  

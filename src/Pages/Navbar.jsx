@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-// import logo from '../../public/images/logo.png'
+import logo from '../../public/images/logo.png'
 
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../Providers/AuthProvider';
@@ -36,10 +36,17 @@ const handleDarkMode =(event)=>{
 
    
     const navOptions = <>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/instructor'> Instructors</Link></li>
-        <li><Link to='/classes'>Classes</Link></li>
+        <li className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='/'>Home</Link></li>
+        <li className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='/instructor'> Instructors</Link></li>
+        <li className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='/classes'>Classes</Link></li>
            
+        {
+              user?.email ? <>
+                        <li  className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='dashboardlayout'>Dashboard</Link></li>
+              </> :
+                <li><Link to='/login'>Login</Link> </li>
+            }
+
         <div className='lg:flex'>
                                 <label className="swap swap-rotate">
 
@@ -53,34 +60,28 @@ const handleDarkMode =(event)=>{
             </div>
 
 
-        {
-              user?.email ? <>
-                        <li><Link to='dashboardlayout'>Dashboard</Link></li>
-              </> :
-                <li><Link to='/login'>Login</Link> </li>
-            }
-
+      
 
         
     </>
     return (
         <>
-            <div className=" bg-opacity-20 bg-slate-100 h-20 text-black max-w-screen-xl navbar text-xl">
+            <div className="container mx-auto pr-12 bg-opacity-20 bg-gray-500 h-20 text-black max-w-screen-xl navbar text-xl">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-red-400 rounded-box w-52">
+                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-gray-200 hover:bg-inherit hover:text-white rounded-box w-52">
 
 
                             {navOptions}
 
                         </ul>
                     </div>
-                   {/* <Link to="/">
-                   <img className=' h-32' src={logo} alt="" />
-                   </Link> */}
+                   <Link to="/">
+                   <img className=' h-10' src={logo} alt="" />
+                   </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -99,8 +100,8 @@ const handleDarkMode =(event)=>{
               
             }
 
-             <div>
-              {user && <span> <button onClick={handleLogOut}>Sign Out</button> </span>}
+             <div className='text-sm pl-2'>
+              {user && <span> <button className='p-1 hover:bg-blue-700 hover:text-white hover:rounded' onClick={handleLogOut}>Sign Out</button> </span>}
             </div>
 
               
