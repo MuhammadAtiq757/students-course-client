@@ -36,12 +36,12 @@ const handleDarkMode =(event)=>{
 
    
     const navOptions = <>
-        <li className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='/'>Home</Link></li>
-        <li className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='/classes'>Courses</Link></li>
+        <li className='hover:bg-[#2980b9] hover:text-white hover:rounded'><Link to='/'>Home</Link></li>
+        <li className='hover:bg-[#2980b9] hover:text-white hover:rounded'><Link to='/classes'>Courses</Link></li>
            
         {
               user?.email ? <>
-                        <li  className='hover:bg-blue-700 hover:text-white hover:rounded'><Link to='dashboardlayout'>Dashboard</Link></li>
+                        <li  className='hover:bg-[#2980b9] hover:text-white hover:rounded'><Link to='dashboardlayout'>Dashboard</Link></li>
               </> :
                 <li><Link to='/login'>Login</Link> </li>
             }
@@ -100,7 +100,7 @@ const handleDarkMode =(event)=>{
             }
 
              <div className='text-sm pl-2'>
-              {user && <span> <button className='p-1 hover:bg-blue-700 hover:text-white hover:rounded' onClick={handleLogOut}>Sign Out</button> </span>}
+              {user && <span> <button className='p-1 hover:bg-[#2980b9] hover:text-white hover:rounded' onClick={handleLogOut}>Sign Out</button> </span>}
             </div>
 
               

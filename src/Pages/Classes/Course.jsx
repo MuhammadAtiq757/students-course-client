@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Providers/AuthProvider';
 
-const Class = ({ da }) => {
+const Course = ({ da }) => {
   const { user } = useContext(AuthContext);
   const { _id, instructorName, price, image } = da;
   console.log(da);
@@ -61,7 +61,7 @@ const Class = ({ da }) => {
           <p>Students: {da.students}</p>
           <p>Available Seats: {da.availableSeats}</p>
           <button
-            className='btn btn-outline hover:bg-blue-700'
+            className='btn btn-outline hover:bg-[#2980b9]'
             onClick={() => handleSelectClass(da)}
             disabled={isButtonDisabled} // Disable the button based on the state
           >
@@ -73,4 +73,4 @@ const Class = ({ da }) => {
   );
 };
 
-export default Class;
+export default Course;

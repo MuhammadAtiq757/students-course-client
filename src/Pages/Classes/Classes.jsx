@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './classes.css';
-import Class from './Class';
+import Course from './Course';
+
 
 const Classes = () => {
   const [data, setData] = useState([]);
@@ -36,7 +37,7 @@ const Classes = () => {
         } else {
           return (
             <div key={da._id} style={{ backgroundColor: 'white' }}>
-              <Class da={da} />
+              <Course da={da} />
             </div>
           );
         }

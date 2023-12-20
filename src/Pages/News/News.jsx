@@ -10,7 +10,7 @@ const News = () => {
              </div>
 
 
-<div className='grid md:grid-cols-3 gap-4'>
+<div className='grid md:grid-cols-3 gap-2 pl-6 container mx-auto'>
 <div className="card w-80 h-[400px] bg-base-100 shadow-xl">
   <figure><img className='h-[220px]' src="https://i.ibb.co/0Vb2v3S/2-870x400.jpg" alt="Shoes" /></figure>
   <div className="card-body">

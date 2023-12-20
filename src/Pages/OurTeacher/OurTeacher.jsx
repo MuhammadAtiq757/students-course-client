@@ -4,13 +4,13 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 const OurTeacher = () => {
     return (
-        <div className='mt-24 container mx-auto'>
+        <div className='mt-24 mx-auto container'>
              <div className='text-center mb-16'>
                 <h1 className='text-4xl font-semibold mb-2'>OUR TEACHER</h1>
                 <p>Our preschool program has six dedicated Teachers</p>
              </div>
 
-<div className='grid md:grid-cols-3 gap-4'>
+<div className='grid md:grid-cols-3 gap-4 container mx-auto pl-6'>
 <div className="card w-80 bg-base-200 shadow-xl">
   <figure><img src="https://i.ibb.co/74gJkvw/141791e52c8b60893c1f8874460f1ef5.jpg" alt="teacher" /></figure>
   <div className="card-body">
@@ -52,9 +52,9 @@ const OurTeacher = () => {
     </h2>
     <p>Professor, university of America</p>
     <div className="card-actions justify-center mt-4 gap-4">
-    <FaSquareFacebook className='rounded-lg text-blue-700' />
-    <FaTwitter className='rounded-lg text-blue-700' />
-    <FaInstagramSquare className='rounded-lg text-blue-700' />
+    <FaSquareFacebook className='rounded-lg text-[#2980b9]' />
+    <FaTwitter className='rounded-lg text-[#2980b9]' />
+    <FaInstagramSquare className='rounded-lg text-[#2980b9]' />
       
     </div>
   </div>

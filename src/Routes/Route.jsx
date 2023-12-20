@@ -8,13 +8,13 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignIn/SignUp";
-import Classes from "../Pages/Classes/Classes";
 import DashboardLayout from "../Layout/DashboardLayout";
 import AdminClasses from "../Pages/Dashboard/Admin/AdminClasses";
 import Allusers from "../Pages/Dashboard/Admin/Allusers";
 import SelectedClass from "../Pages/Dashboard/SelectedClass";
 import AddClasses from "../Pages/InstructorHome/AddClasses";
 import MyClass from "../Pages/InstructorHome/MyClass";
+import Classes from "../Pages/Classes/Classes";
 
 
 
